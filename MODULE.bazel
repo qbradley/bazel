@@ -387,6 +387,11 @@ use_repo(pip, "bazel_pip_dev_deps")
 # Other Bazel build dependencies
 # =========================================
 
+rpm_toolchains = use_extension("@rules_pkg//toolchains/rpm:rpmbuild_configure.bzl", "find_system_rpmbuild_bzlmod")
+use_repo(rpm_toolchains, "rules_pkg_rpmbuild")
+
+register_toolchains("@rules_pkg_rpmbuild//:all")
+
 bazel_build_deps = use_extension("//:extensions.bzl", "bazel_build_deps")
 use_repo(
     bazel_build_deps,

@@ -14,8 +14,8 @@ pkg_rpm(
     data = [
         "//scripts:bash_completion",
         "//scripts/packages:bazel.bazelrc",
-        "//scripts/packages:without-jdk/bazel",
-        "//scripts/packages:without-jdk/bazel-real",
+        "//scripts/packages:with-jdk/bazel",
+        "//scripts/packages:with-jdk/bazel-real",
         "//scripts/zsh_completion:_bazel",
     ],
     spec_file = "bazel.spec",

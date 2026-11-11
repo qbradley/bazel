@@ -10,8 +10,6 @@ Source1: {bazel-real}
 Source2: {bazel.bazelrc}
 Source3: {bazel-complete.bash}
 
-Requires: java-1.8.0-openjdk-headless
-
 %description
 Bazel is a build tool that builds code quickly and reliably. It is used to build the majority of Google's software, and thus it has been designed to handle build problems present in Google's development environment.
 
